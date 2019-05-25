@@ -24,14 +24,23 @@
 #### Для примера добавим опцию которая выключает поддержку виртуальной файловой системы ftp. Добавляем в секцию `%configure` значение `--enable-vfs-ftp`
 
 `%configure      --with-screen=slang \
+
                 --enable-charset \
+                
                 --without-x \
+                
                 --with-gpm-mouse \
+                
                 --disable-rpath \
+                
                 --enable-vfs-smb \
+                
                 --enable-vfs-sftp \
+                
                 --enable-aspell \
+                
                 --enable-vfs-mcfs \
+                
                 --enable-vfs-ftp`
                 
 #### Собираем RPM пакет
@@ -45,8 +54,7 @@
 + cd /root/rpmbuild/BUILD
 + cd mc-4.8.7
 + rm -rf /root/rpmbuild/BUILDROOT/mc-4.8.7-11.el7.x86_64
-+ exit 0
-`
++ exit 0`
 
 #### Устанавливаем собраный пакет
 
